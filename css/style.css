@@ -50,7 +50,7 @@ h1{
 
     border: 2px solid;
     border-radius: 50%;
-    border-color: #053452;
+    box-shadow: 5px 10px 18px #000000;
 
     background-repeat: no-repeat;
     background-position: center;
