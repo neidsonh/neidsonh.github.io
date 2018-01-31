@@ -11,7 +11,6 @@ a{
 }
 
 .img-main{  
-    height: 100vh;
     width: 100%;
     
     position: relative;
@@ -61,13 +60,13 @@ a{
     padding: 10px;
     margin-right: 50px;    
     margin-left: 50px;
-    color: white;
+    color: black;
 }
 
 @media screen and (max-width: 480px){
     .user { 
-        width: 200px;
-        height: 200px;
+        width: 230px;
+        height: 230px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -106,19 +105,25 @@ a{
     top:9px;
 }
 
-.about-me{
+.center-screen{
     height: 100vh;
-    display: table-cell;
     vertical-align: middle;
-    padding: 7%;
+    padding: 8%;
 }
 
-section.about-me{   
+section.center-screen{   
     color: #000000; 
     background-color: coral;
+    display: table-cell;
 }
 
-div.about-me.portfolio{
+div.center-screen.portfolio{
     color: #000000; 
     background-color: lightskyblue;
+    display: table-cell; 
+}
+
+.title{
+    font-size: 50px;
+    margin-bottom: 50px;
 }
