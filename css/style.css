@@ -29,14 +29,14 @@ a{
     
 }
 .footer{
-    margin-top: 10%;
+    color: #000000;
+    background-color: #1D809F;
     text-align: center;
-    background-color: rgb(172, 172, 172);
-    padding: 10px;
-    position: static;
+    padding: 20px;
+    width: 100%;
     left: 0;
     bottom: 0;
-    width: 100%;
+    position: static;
 }
 
 .user { 
