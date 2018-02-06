@@ -10,12 +10,36 @@ a{
     outline:none !important;
 }
 
-.img-main{  
-    width: 100%;
+@media screen and (max-width: 480px){
+    .user { 
+        width: 230px;
+        height: 230px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     
-    position: relative;
-    display: block;
-    overflow: hidden; 
+        border: 1px solid;
+        border-radius: 50%;
+        box-shadow: 5px 10px 18px #000000;
+    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+        object-fit: cover;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+
+.size-all{
+    width: 100%;
+    height: 100%;    
+    display: table;
+}
+
+.img-main{  
 
     background: url("../img/main-three.jpg") fixed;
     background-position: center center;
@@ -24,9 +48,37 @@ a{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
     
 }
+
+.about-me{
+    color: #000000; 
+    background-color: coral;
+}
+
+.portfolio{
+    color: #000000; 
+    background-color: lightskyblue;
+}
+
+.skills{
+    color: #000000;
+    background-color: darkseagreen;
+}
+
+.comming-soon{
+    font-size: 30px;
+    background-color: brown;
+    border: 0 solid black;
+    box-shadow: 5px 10px 18px #000000;
+}
+
+.v-align {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .footer{
     color: #000000;
     background-color: #1D809F;
@@ -63,27 +115,9 @@ a{
     color: black;
 }
 
-@media screen and (max-width: 480px){
-    .user { 
-        width: 230px;
-        height: 230px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    
-        border: 1px solid;
-        border-radius: 50%;
-        box-shadow: 5px 10px 18px #000000;
-    
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      
-        object-fit: cover;
-    }
-    .title{
-        font-size: 20px;
-    }
+.title{
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
 .btn3d {
@@ -103,27 +137,4 @@ a{
 
 .btn3d:active {
     top:9px;
-}
-
-.center-screen{
-    height: 100vh;
-    vertical-align: middle;
-    padding: 8%;
-}
-
-section.center-screen{   
-    color: #000000; 
-    background-color: coral;
-    display: table-cell;
-}
-
-div.center-screen.portfolio{
-    color: #000000; 
-    background-color: lightskyblue;
-    display: table-cell; 
-}
-
-.title{
-    font-size: 50px;
-    margin-bottom: 50px;
 }

@@ -20,16 +20,16 @@
 
 <body>
 
-  <section class="img-main">
-    <div class="center-screen">
+  <header class="img-main size-all" id="top">
+    <div class="v-align">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <img src="img/profile-image.jpg" alt="Foto de perfil" class="user">
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="content">
-            <h1 class="title text-center">Neidson Henrique</h1>
-            <div class="text-center">
+            <h1 class="title">Neidson Henrique</h1>
+            <div class="">
               <a href="https://github.com/neidsonh">
                 <span class="fa fa-github-square fa-4x" aria-hidden="true"></span>
               </a>
@@ -38,7 +38,7 @@
               </a>
             </div>
             <div class="text-center">
-              <a class="btn btn-primary btn3d scroll" href="#sobre-mim">Sobre mim
+              <a class="btn btn-primary btn3d scroll" href="#about-me">Sobre mim
                 <span class="fa fa-user" aria-hidden="true"></span>
               </a>
               <a class="btn btn-primary btn3d scroll" href="#portfolio">Projetos
@@ -52,35 +52,42 @@
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
   <!-- Sobre mim -->
-  <section class="center-screen" id="sobre-mim">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center">Sobre mim</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit, erat eget semper facilisis, nibh
-          erat condimentum ipsum, ac tempor tellus sem et elit. Sed felis mi, vehicula sed venenatis at, bibendum et nunc.
-          Curabitur viverra dui laoreet, faucibus purus ac, viverra leo. Sed ut porttitor elit. Orci varius natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Aenean condimentum enim dolor, eget cursus nisi dictum
-          ac.
-        </p>
-        <div class="text-center">
-          <a class="btn btn-primary btn3d scroll" href="#portfolio">Projetos
-            <span class="fa fa-hand-o-down" aria-hidden="true"></span>
-          </a>
+  <section class="about-me size-all" id="about-me">
+    <div class="v-align">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Sobre mim</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit, erat eget semper facilisis, nibh
+            erat condimentum ipsum, ac tempor tellus sem et elit. Sed felis mi, vehicula sed venenatis at, bibendum et nunc.
+            Curabitur viverra dui laoreet, faucibus purus ac, viverra leo. Sed ut porttitor elit. Orci varius natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus mus. Aenean condimentum enim dolor, eget cursus nisi dictum
+            ac.
+          </p>
+          <div>
+            <a class="btn btn-primary btn3d scroll" href="#portfolio">Projetos
+              <span class="fa fa-hand-o-down" aria-hidden="true"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- Portfolio -->
-  <section id="portfolio">
-    <div class="center-screen portfolio">
-      <div class="text-center">
-        <h1 class="mb-5">Projetos Recentes</h1>
+  <section class="portfolio size-all" id="portfolio">
+    <div class="v-align">
+      <h1 class="mb-5">Projetos Recentes</h1>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <p class="comming-soon">Comming Soon</p>
+        </div>
       </div>
-      <div class="row no-gutters">
+      <!-- <div class="row no-gutters">
         <div class="col-md-4">
           <a class="portfolio-item" data-target="#project1" data-toggle="modal" href="#project1">
             <span class="caption">
@@ -91,30 +98,20 @@
             <img class="img-fluid" src="img/icon-profile.png" alt="">
           </a>
         </div>
-        <div class="col-md-4">
-          <a class="portfolio-item" data-target="#project1" data-toggle="modal" href="#project2">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Projeto 2</h2>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/icon-profile.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="portfolio-item" data-target="#project1" data-toggle="modal" href="#project3">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Projeto 3</h2>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/icon-profile.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="text-center">
-        <a class="btn btn-primary btn3d scroll" href="skills">Skills
+      </div> -->
+      <div class="">
+        <a class="btn btn-primary btn3d scroll" href="#skills">Skills
           <span class="fa fa-hand-o-down" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills size-all" id="skills">
+    <div class="v-align">
+      <div>
+        <a class="btn btn-primary btn3d scroll" href="#top">Voltar ao topo
+          <span class="fa fa-hand-o-up" aria-hidden="true"></span>
         </a>
       </div>
     </div>
@@ -123,42 +120,6 @@
   <!-- Modal -->
   <!-- Project 1 -->
   <div class="modal fade" id="project1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="modal fade" id="project2" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="modal fade" id="project3" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
