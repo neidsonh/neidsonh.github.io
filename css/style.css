@@ -1,4 +1,4 @@
-body{    
+body{
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -10,36 +10,20 @@ a{
     outline:none !important;
 }
 
-@media screen and (max-width: 480px){
-    .user { 
-        width: 230px;
-        height: 230px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    
-        border: 1px solid;
-        border-radius: 50%;
-        box-shadow: 5px 10px 18px #000000;
-    
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      
-        object-fit: cover;
-    }
-    .title{
-        font-size: 20px;
-    }
+section, header{
+    border: solid 2px red;
 }
 
 .size-all{
     width: 100%;
-    height: 100%;    
+    height: 100%;
+    /* padding: 8%; */
     display: table;
 }
 
-.img-main{  
+.img-main{
+    width: 100%;
+    height: 100%;
 
     background: url("../img/main-three.jpg") fixed;
     background-position: center center;
@@ -48,22 +32,40 @@ a{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    
+
 }
 
 .about-me{
-    color: #000000; 
+    color: #000000;
     background-color: coral;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .portfolio{
-    color: #000000; 
+    color: #000000;
     background-color: lightskyblue;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .skills{
     color: #000000;
     background-color: darkseagreen;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .comming-soon{
@@ -90,7 +92,7 @@ a{
     position: static;
 }
 
-.user { 
+.user {
     width: 350px;
     height: 350px;
     display: block;
@@ -104,14 +106,43 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  
+
     object-fit: cover;
 }
-  
+
+@media screen and (max-width: 480px){
+    .user {
+        width: 180px;
+        height: 180px;
+        display: block;
+        /* margin-left: auto;
+        margin-right: auto; */
+
+        border: 1px solid;
+        border-radius: 50%;
+        box-shadow: 5px 10px 18px #000000;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        object-fit: cover;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 270px){
+    .title{
+        font-size: 10px;
+    }
+}
+
 .content {
     padding: 10px;
-    margin-right: 50px;    
-    margin-left: 50px;
+    /* margin-right: 50px;
+    margin-left: 50px; */
     color: black;
 }
 
@@ -127,7 +158,7 @@ a{
     -moz-outline-style:none;
     border: 0px;
     margin-right: 10px;
-    margin-top: 15px;    
+    margin-top: 15px;
 }
 
 .btn3d:focus {
