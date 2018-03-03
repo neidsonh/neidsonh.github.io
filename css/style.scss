@@ -1,5 +1,4 @@
 @import "../libs/bootstrap/scss/bootstrap.scss";
-@import "../libs/stylish-portfolio/scss/stylish-portfolio.scss";
 
 $cover: cover;
 $size: 100%;
@@ -129,24 +128,6 @@ a{
     margin-bottom: 50px;
 }
 
-.btn3d {
-    transition:all .08s linear;
-    position:relative;
-    outline:medium none;
-    -moz-outline-style:none;
-    border: 0px;
-    margin-top: 15px;
-}
-
-.btn3d:focus {
-    outline:medium none;
-    -moz-outline-style:none;
-}
-
-.btn3d:active {
-    top:9px;
-}
-
 .img-skill{
     width: 400px;
     margin: 25px;
@@ -156,6 +137,29 @@ hr{
     border-color: darkcyan;
     box-sizing:border-box;
     width:$size;  
+}
+
+
+.grow {
+    transition: all .2s ease-in-out;
+    margin: 10px;
+}
+
+.grow:hover {
+    transform: scale(1.3);
+}
+
+.shrink {
+    margin-top: 15px;
+    transition:all .08s linear;
+    position:relative;
+    border: 0px;
+}
+
+.shrink:active {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);    
 }
 
 @media screen and (max-width: 1000px){
