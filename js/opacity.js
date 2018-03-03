@@ -1,3 +1,3 @@
 $(window).scroll(function(){
-    $(".opacity").css("opacity", 1 - $(window).scrollTop() / 500);
+    $(".opacity").css("opacity", 1 - $(window).scrollTop() / 300);
 });
