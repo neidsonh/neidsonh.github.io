@@ -1,6 +1,5 @@
 @import "../libs/bootstrap/scss/bootstrap.scss";
 
-$cover: cover;
 $size: 100%;
 
 body{
@@ -15,55 +14,49 @@ a{
     outline:none !important;
 }
 
+
+
 .size-all{
     width: $size;
     height: $size;
     padding: 8%;
     display: table;
 }
+
+.bg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@mixin background($background){
+    color: black;
+    background-color: $background;
+    @extend .bg;
+}
+
 .comming-soon{
     text-align: center;
     font-size: 30px;
-    background-color: brown;
     border: 0 solid black;
     box-shadow: 5px 10px 18px #000000;
-    background-size: $cover;
-    -webkit-background-size: $cover;
-    -moz-background-size: $cover;
-    -o-background-size: $cover;
+    @include background(brown);
 }
 
 .skills{
-    color: #000000;
-    background-color: seagreen;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: $cover;
-    -webkit-background-size: $cover;
-    -moz-background-size: $cover;
-    -o-background-size: $cover;
+    @include background(seagreen);
+
 }
 
 .portfolio{
-    color: #000000;
-    background-color: steelblue;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: $cover;
-    -webkit-background-size: $cover;
-    -moz-background-size: $cover;
-    -o-background-size: $cover;
+    @include background(steelblue);
 }
 
 .about-me{
-    color: #000000;
-    background-color: coral;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: $cover;
-    -webkit-background-size: $cover;
-    -moz-background-size: $cover;
-    -o-background-size: $cover;
+    @include background(coral);
 }
 
 
@@ -74,16 +67,9 @@ a{
 }
 
 .img-main{
-    width: $size;
-    height: $size;
-
     background: url("../img/main-three.jpg") fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: $cover;
-    -webkit-background-size: $cover;
-    -moz-background-size: $cover;
-    -o-background-size: $cover;
+    // background-size: 100% 100%;
+    @extend .bg;
 
 }
 
@@ -100,8 +86,6 @@ a{
 
 .content {
     padding: 10px;
-    /* margin-right: 50px;
-    margin-left: 50px; */
     color: black;
 }
 
@@ -116,11 +100,9 @@ a{
     border-radius: 50%;
     box-shadow: 5px 10px 18px #000000;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: $cover;
+    @extend .bg;
 
-    object-fit: $cover;
+    object-fit: cover;
 }
 
 .name{
@@ -183,12 +165,12 @@ hr{
 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: $cover;
+        background-size: cover;
 
-        object-fit: $cover;
+        object-fit: cover;
     }
     .name{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .img-skill{
