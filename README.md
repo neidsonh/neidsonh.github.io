@@ -1,3 +1,3 @@
 # Neidson Henrique
 
-Meu portfólio pessoal, com informações sobre mim, como contato, skills e projetos já feitos. 
+Portfólio pessoal, com informações sobre mim, tais como contato, skills e projetos já feitos. 
